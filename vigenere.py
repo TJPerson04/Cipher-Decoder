@@ -1,6 +1,12 @@
 ALPHABET = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 def encode_vig(text: str, key: str) -> str:
+    '''
+    Encode given text using the classic vigenere cipher.\n
+
+    text: The plaintext to encode.\n
+    key: The key to use in the cipher.
+    '''
     for character in key:
         if (not character in ALPHABET):
             return text
@@ -28,6 +34,12 @@ def encode_vig(text: str, key: str) -> str:
     return output
 
 def decode_vig(text: str, key: str) -> str:
+    '''
+    Decode the given text using the classic vigenere cipher.\n
+
+    text: The ciphertext to decode.\n
+    key: The key to use in the cipher.
+    '''
     for character in key:
         if (not character in ALPHABET):
             return text
@@ -56,7 +68,7 @@ def decode_vig(text: str, key: str) -> str:
 
 def reverse_vig(plaintext: str, ciphertext: str) -> str:
     '''
-    Find the key that brings the given plaintext to the given ciphertext
+    Find the key that brings the given plaintext to the given ciphertext.
     '''
     if (len(plaintext) != len(ciphertext)):
         return ""
@@ -75,6 +87,12 @@ def reverse_vig(plaintext: str, ciphertext: str) -> str:
 
 
 def decode_beaufort(text: str, key: str) -> str:
+    '''
+    Decode the given text using the beaufort style of vigenere cipher.\n
+
+    text: The ciphertext to decode.\n
+    key: The key to use in the cipher.
+    '''
     for character in key:
         if (not character in ALPHABET):
             return text
@@ -103,6 +121,12 @@ def decode_beaufort(text: str, key: str) -> str:
     return output
 
 def encode_variant_beaufort(text: str, key: str) -> str:
+    '''
+    Encode the given text using the variant beaufort style of vigenere cipher.\n
+
+    text: The plaintext to encode.\n
+    key: The key to use in the cipher.
+    '''
     for character in key:
         if (not character in ALPHABET):
             return text
@@ -131,6 +155,12 @@ def encode_variant_beaufort(text: str, key: str) -> str:
     return output
 
 def decode_variant_beaufort(text: str, key: str) -> str:
+    '''
+    Decode the given text using the variant beaufort style of vigenere cipher.\n
+
+    text: The ciphertext to decode.\n
+    key: The key to use in the cipher.
+    '''
     for character in key:
         if (not character in ALPHABET):
             return text
