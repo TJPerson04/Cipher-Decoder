@@ -1,0 +1,6 @@
+# Cipher Decoder
+## Background
+This is a little project I made for my home game of Dungeons and Dragons. My DM gave us an encoded message, intending to give us the key much later, making this a longer, slow-burn of a puzzle. Instead, I wrote this program to figure out the key purely from the encoded text.
+
+## Using It
+This is meant to be mostly a framework, very easy to add on to, use with other ciphers, etc. If you want to use this for yourself, just download the files and check out main.py. You'll find some comments leading you through how to utilize the current tests.
