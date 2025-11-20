@@ -38,9 +38,9 @@ word_dict = WordDictionary(dictionary_file_paths=["word_lists/words.csv", "word_
 ## the words this will check to smaller words, assuming that if the key is two words combined, that those
 ## words aren't very long.
 ##
-## To use, first uncomment the initailization of dict_compare, then uncomment the test you want to run.
+## To use, first make sure to uncomment the initailization of dict_compare, then uncomment the test you want to run.
 
 dict_compare = DictCompare(encoded_text, decode_vig, word_dict=word_dict, rev_cipher_func=reverse_vig, keys_to_test=word_dict.small_words)
-# dict_compare.quick_solve(5)
+dict_compare.quick_solve(5)
 # dict_compare.solve()
-dict_compare.solve_two_word_keys()
+# dict_compare.solve_two_word_keys()
